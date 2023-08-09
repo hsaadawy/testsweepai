@@ -1,18 +1,14 @@
 from abc import ABC, abstractmethod
 
 class BaseRepository(ABC):
-    @abstractmethod
     def create(self, entity):
-        pass
+        print("Creating entity...")
 
-    @abstractmethod
     def read(self, id):
-        pass
+        print("Reading entity with id", id, "...")
 
-    @abstractmethod
     def update(self, entity):
-        pass
+        print("Updating entity...")
 
-    @abstractmethod
     def delete(self, id):
-        pass
+        print("Deleting entity with id", id, "...")
